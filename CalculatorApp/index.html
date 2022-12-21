@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        
+    <title>Document</title>
+        
+   
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+            integrity=
+    "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script>
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+            integrity=
+    "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <table id="calc">
+
+        <tr>
+            <td class="leftBtn"><input type="button" value="c" onclick="clr()"></td>
+            <td colspan="3"><input type="text" id="result"></td>
+        </tr>
+        <tr>
+       <td class="leftBtn"><input type="button" value="+" onClick="disp('+')" onkeydown="myFunction(event)"></td>
+       <td><input type="button" value="1" onClick="disp('1')" onkeydown="myFunction(event)"></td>
+       <td><input type="button" value="2" onClick="disp('2')" onkeydown="myFunction(event)"></td>
+       <td><input type="button" value="3" onClick="disp('3')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td class="leftBtn"><input type="button"  value="-" onClick="disp('-')"></td>
+            <td><input type="button"  value="4" onClick="disp('4')" onkeydown="myFunction(event)"></td>
+            <td><input type="button"  value="5" onClick="disp('5')" onkeydown="myFunction(event)"></td>
+            <td><input type="button"  value="6" onClick="disp('6')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td class="leftBtn"><input type="button" value="*" onclick="disp('*')"></td>
+            <td><input type="button" value="7" onclick="disp('7')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="8" onclick="disp('8')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="9" onclick="disp('9')" onkeydown="myFunction(event)"></td>
+            
+        </tr>
+        <tr>
+            <td class="leftBtn"><input type="button" value="/" onClick="disp('/')"></td>
+            <td><input type="button" value="." onClick="disp('.')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="0" onClick="disp('0')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="=" onClick="solve()" onkeydown="myFunction(event)"></td>
+        </tr>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
